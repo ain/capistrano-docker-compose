@@ -1,6 +1,11 @@
 # capistrano-docker-compose
 
-Docker Compose integration for Capistrano
+Docker Compose integration for Capistrano.
+
+## Features
+
+- Standard Capistrano code deploys
+- Environment-specific Docker container deploys
 
 ## Requirements
 
