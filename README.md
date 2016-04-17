@@ -10,6 +10,7 @@ As per environment's Docker Compose descriptor:
 
 - Docker image update
 - Docker container recreate
+- Application cache control upon deployment
 
 ## Setup
 
@@ -17,6 +18,12 @@ As per environment's Docker Compose descriptor:
   - `docker-compose.yml`
   - `docker-compose-staging.yml`
   - `docker-compose-production.yml`
+2. Set `MASTER_CONTAINER` environment variable for container that will receive maintenance commands on deployment, e.g.:
+  ```
+  web:
+    environment:
+      - MASTER_CONTAINER=true
+  ```
 2. Configure `deploy.rb` with options:
 
   ```ruby
@@ -24,6 +31,9 @@ As per environment's Docker Compose descriptor:
   :set :docker_registry_server, '<server>'
   :set :docker_registry_username, '<username>'
   :set :docker_registry_password, '<password>'
+
+  # Cache clearing command within MASTER_CONTAINER
+  :set :docker_cache_clear, '<command>'
   ```
 
 ## Requirements
