@@ -1,18 +1,19 @@
 # capistrano-docker-compose
 
-Docker Compose integration for Capistrano.
+capistrano-docker-compose adds Docker containers to Capistrano code deployments making it possible to deploy server stack alongside application.
 
 ## Features
 
-- Standard Capistrano code deploys
-- Environment-specific Docker container deploys
+As per environment's Docker Compose descriptor:
+
+- Docker image update
+- Docker container recreate
 
 ## Requirements
 
 - Capistrano 3.4+
 - Docker Engine 1.11+
 - Docker Compose 1.7+
-- Phusion Passenger 5+
 
 ## Licence
 
