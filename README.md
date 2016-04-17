@@ -19,6 +19,7 @@ As per environment's Docker Compose descriptor:
   - `docker-compose-staging.yml`
   - `docker-compose-production.yml`
 2. Set `MASTER_CONTAINER` environment variable for container that will receive maintenance commands on deployment, e.g.:
+
   ```
   web:
     environment:
