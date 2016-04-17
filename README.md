@@ -17,9 +17,11 @@ As per environment's Docker Compose descriptor:
   - `docker-compose.yml`
   - `docker-compose-staging.yml`
   - `docker-compose-production.yml`
-2. Configure `deploy.rb` with options (all options are optional):
+2. Configure `deploy.rb` with options:
 
   ```ruby
+  # Use with private registry. Not required for public images on Docker Hub.
+  :set :docker_registry_server, '<server>'
   :set :docker_registry_username, '<username>'
   :set :docker_registry_password, '<password>'
   ```
