@@ -1,6 +1,6 @@
 # capistrano-docker-compose
 
-__WORK IN PROGRESS__.
+__MOVED__. `capistrano-docker-compose` is now maintained by Interactive Pioneers at https://github.com/interactive-pioneers/capistrano-docker-compose.
 
 capistrano-docker-compose adds Docker containers to Capistrano code deployments making it possible to deploy server stack alongside application.
 
